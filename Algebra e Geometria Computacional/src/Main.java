@@ -20,5 +20,6 @@ public class Main {
         int colunas = Integer.parseInt(inputArr[1]);
 
         Matriz matriz = new Matriz(linhas,colunas);
+        matriz.get(1,1);
     }
 }

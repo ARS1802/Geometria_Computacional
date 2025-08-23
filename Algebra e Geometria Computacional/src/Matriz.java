@@ -6,9 +6,10 @@ public class Matriz {
     int linhas = 0;
     int colunas = 0;
     int qntdTermos = 0;
+    int [][] matriz;
 //
     Matriz(int linhas, int colunas) {
-        int [][] matriz = new int[linhas][colunas];
+        matriz = new int[linhas][colunas];
         this.linhas = linhas;
         this.colunas = colunas;
         matriz = inserirTermos(matriz);
@@ -58,6 +59,17 @@ public class Matriz {
         }
 
         return matriz;
+    }
+//
+
+//(Arthur)
+    public int get(int linha, int coluna) {
+        //System.out.printf("Elemento [linha: %d][coluna: %d] = %d", linha, coluna, matriz[linha][coluna]);
+        return matriz[linha][coluna];
+    }
+
+    public void set(int linha, int coluna, int valor) {
+        matriz[linha][coluna] = valor;
     }
 //
 }
