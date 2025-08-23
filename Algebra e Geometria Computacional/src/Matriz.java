@@ -12,6 +12,7 @@ public class Matriz {
         matriz = new int[linhas][colunas];
         this.linhas = linhas;
         this.colunas = colunas;
+        this.qntdTermos = linhas * colunas;
         matriz = inserirTermos(matriz);
         System.out.println(Arrays.deepToString(matriz));
     }
